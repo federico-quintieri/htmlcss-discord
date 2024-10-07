@@ -106,7 +106,7 @@ nav.row {
 }
 
 header ul.flex {
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 header .col-25.text-left {
@@ -124,8 +124,8 @@ main > .container {
 }
 
 section {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* Hero section */
@@ -245,11 +245,6 @@ footer {
 }
 
 /* Section 5 */
-#fifth-section > .container > .row {
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 #fifth-section h3 {
   font-size: 1.8rem;
   color: var(--footer-text-color);
@@ -281,6 +276,7 @@ footer {
 /* Section 6 */
 #sixth-section > .container > .row {
   justify-content: space-between;
-  align-items: flex-start;
-  
+}
+#sixth-section .span-button{
+  background-color: var(--button-kinda-blue);
 }
