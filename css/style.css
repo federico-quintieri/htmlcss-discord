@@ -42,6 +42,22 @@ li {
   width: 25%;
 }
 
+.col-75 {
+  width: 75%;
+}
+.col-70 {
+  width: 70%;
+}
+.col-60 {
+  width: 60%;
+}
+.col-40 {
+  width: 40%;
+}
+.col-30 {
+  width: 30%;
+}
+
 .container {
   width: 80%;
   max-width: 1100px;
@@ -77,7 +93,6 @@ li {
   width: 90%;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid black;
 }
 nav.row {
   height: 100%;
@@ -109,7 +124,6 @@ section {
 
 /* Hero section */
 .hero-section {
-  border: 2px solid red;
   background-image: url(../img/jumbo.png);
   background-size: cover;
   background-position: center;
@@ -143,61 +157,69 @@ section {
 
 .hero-buttons span {
   font-size: 1.2rem;
-  margin:0px 5px 0 5px;
+  margin: 0px 5px 0 5px;
 }
 
 /* Section 1 */
 
-.sec-1 > .container > .row {
-  display: flex;
+#first-section > .container > .row {
   justify-content: space-between;
+  align-items: flex-start;
 }
-.sec-1 > .container > .row > .col-1 {
-  width: 60%;
-  /* debug */
-  background-color: brown;
+
+#first-section h2 {
+  padding-top: 25px;
+  font-size: 3rem;
 }
-.sec-1 > .container > .row > .col-2 {
-  width: 40%;
-  background-color: burlywood;
+#first-section p {
+  padding-top: 15px;
 }
 
 /* Section 2 */
-.sec-2 > .container > .row {
-  display: flex;
+#second-section > .container > .row {
   justify-content: space-between;
+  align-items: flex-start;
 }
-.sec-2 > .container > .row > .col-1 {
-  width: 40%;
-  /* debug */
-  background-color: burlywood;
+
+#second-section h2 {
+  padding-top: 25px;
+  font-size: 3rem;
 }
-.sec-2 > .container > .row > .col-2 {
-  width: 60%;
-  background-color: brown;
+#second-section p {
+  padding-top: 15px;
 }
 
 /* Section 3 */
-.sec-3 > .container > .row {
-  display: flex;
+#third-section > .container > .row {
   justify-content: space-between;
+  align-items: flex-start;
 }
-.sec-3 > .container > .row > .col-1 {
-  width: 60%;
-  /* debug */
-  background-color: brown;
+
+#third-section h2 {
+  padding-top: 25px;
+  font-size: 3rem;
 }
-.sec-3 > .container > .row > .col-2 {
-  width: 40%;
-  background-color: burlywood;
+#third-section p {
+  padding-top: 15px;
 }
 
 /* Section 4 */
-.sec-4 > .container > .row {
-  display: flex;
-  justify-content: space-between;
-  background-color: chartreuse;
-  min-height: 450px;
+.container-small {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#fourth-section > .container > .row {
+  text-align: center;
+}
+
+#fourth-section h2 {
+  font-size: 2.5rem;
+}
+
+#fourth-section p {
+  padding-top: 15px;
 }
 
 /* Footer */
