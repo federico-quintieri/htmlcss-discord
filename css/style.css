@@ -5,6 +5,7 @@
   --links-header: white;
   --button-kinda-blue: rgb(109, 109, 236);
   --footer-text-color: rgb(96, 85, 252);
+  --section-background-gray: rgb(226, 226, 226);
 }
 
 /* Reset */
@@ -182,6 +183,10 @@ section {
 }
 
 /* Section 2 */
+#second-section {
+  background-color: var(--section-background-gray);
+}
+
 #second-section > .container > .row {
   justify-content: space-between;
   align-items: flex-start;
@@ -210,6 +215,10 @@ section {
 }
 
 /* Section 4 */
+#fourth-section {
+  background-color: var(--section-background-gray);
+}
+
 .container-small {
   width: 70%;
   height: 100%;
@@ -277,6 +286,17 @@ footer {
 #sixth-section > .container > .row {
   justify-content: space-between;
 }
-#sixth-section .span-button{
+#sixth-section .span-button {
   background-color: var(--button-kinda-blue);
+}
+
+/* Gestione waves */
+.wave.up {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.wave.down{
+  display: flex;
+  flex-direction: column-reverse;
+  transform: scaleY(-1);
 }
