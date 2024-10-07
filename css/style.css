@@ -1,4 +1,11 @@
-/* Reset di default */
+/* Variabili globlali */
+
+:root {
+  --background-header: hsl(222.55deg 81.67% 52.94%);
+  --links-header: white;
+}
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -10,50 +17,76 @@ img {
 
 header {
   height: 60px;
-  display: flex;
-  align-items: center;
-  /* debug */
-  background-color: aqua;
+  width: 100%;
+  background-color: var(--background-header);
 }
 
-/* Creazione container principale */
+a {
+  text-decoration: none;
+  color: var(--links-header);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Utility classes */
+.flex {
+  display: flex;
+}
+.col-50 {
+  width: 50%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
 .container {
   width: 80%;
   max-width: 1100px;
   margin: 0 auto;
-  /* debug */
-  border: 1px solid black;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.span-button {
+  display: inline-block;
+  height: 30px;
+  width: 70px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  background-color: white;
 }
 
 /* Header */
-.header {
-  height: 70%;
-  text-align: center;
-  /* debug */
-  background-color: beige;
+.container-nav {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+nav.row {
+  height: 100%;
+  align-items: center;
 }
 
-.row {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  /* debug */
-  border: 1px solid black;
+header ul.flex {
+  justify-content: space-between;
 }
-.col-1 {
-  width: 25%;
-  text-align: left;
+
+header .col-25.text-left {
+  padding-left: 15px;
 }
-.col-2 {
-  width: 50%;
-}
-.col-3 {
-  width: 25%;
-  text-align: right;
-}
-[class^="col"] {
-  /* debug */
-  border: 1px solid black;
+
+header .col-25.text-right {
+  padding-right: 15px;
 }
 /* Stili classi principali sezioni*/
 
@@ -67,22 +100,16 @@ section {
   padding-bottom: 25px;
 }
 
-main > section > .container,
-section > .container > .row > [class^="col-"] {
-  min-height: 270px;
-}
-
-/* Banner section */
+/* Hero section */
 .banner-section {
-  /* debug */
-  background-color: blue;
+  background-image: url(../img/jumbo.png);
 }
 
-.banner-section > .banner {
-  /* debug */
-
-  width: 50%;
-  background-color: blueviolet;
+/* Hero container */
+.container-hero {
+  width: 60%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 /* Section 1 */
