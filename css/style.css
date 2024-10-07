@@ -4,6 +4,7 @@
   --background-header: hsl(222.55deg 81.67% 52.94%);
   --links-header: white;
   --button-kinda-blue: rgb(109, 109, 236);
+  --footer-text-color: rgb(96, 85, 252);
 }
 
 /* Reset */
@@ -57,6 +58,10 @@ li {
 }
 .col-30 {
   width: 30%;
+}
+
+.col-15 {
+  width: 15%;
 }
 
 .container {
@@ -228,44 +233,51 @@ section {
   margin-bottom: 35px;
 }
 
-#fourth-section .span-button{
-
+#fourth-section .span-button {
   background-color: var(--button-kinda-blue);
-  color:white;
+  color: white;
 }
 /* Footer */
 
 footer {
-  background-color: black;
-  height: 430px;
+  background-color: rgb(39, 39, 39);
+  color: white;
 }
 
 /* Section 5 */
-.sec-5 > .container > .row {
-  display: flex;
+#fifth-section > .container > .row {
   justify-content: space-between;
+  align-items: flex-start;
 }
-.sec-5 > .container > .row > .col-1 {
-  width: 40%;
-  /* debug */
-  background-color: rosybrown;
+
+#fifth-section h3 {
+  font-size: 1.8rem;
+  color: var(--footer-text-color);
 }
-.sec-5 > .container > .row > .col-2 {
-  width: 15%;
-  background-color: aqua;
+
+#fifth-section img {
+  width: 6%;
 }
-.sec-5 > .container > .row > .col-3 {
-  width: 15%;
-  background-color: aqua;
+#fifth-section p {
+  display: inline-block;
 }
-.sec-5 > .container > .row > .col-4 {
-  width: 15%;
-  background-color: aqua;
+
+#fifth-section h3,
+#fifth-section p,
+#fifth-section i,
+#fifth-section div {
+  padding: 5px 10px 5px 0px;
 }
-.sec-5 > .container > .row > .col-5 {
-  width: 15%;
-  background-color: aqua;
+
+#fifth-section li {
+  padding-top: 15px;
 }
+
+#fifth-section li:first-child {
+  color: var(--footer-text-color);
+  font-weight: bolder;
+}
+
 /* Section 6 */
 footer > .sec-6 {
   border: 1px solid gray;
