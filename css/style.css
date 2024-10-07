@@ -3,6 +3,7 @@
 :root {
   --background-header: hsl(222.55deg 81.67% 52.94%);
   --links-header: white;
+  --button-kinda-blue: rgb(109, 109, 236);
 }
 
 /* Reset */
@@ -222,6 +223,16 @@ section {
   padding-top: 15px;
 }
 
+#fourth-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+}
+
+#fourth-section .span-button{
+
+  background-color: var(--button-kinda-blue);
+  color:white;
+}
 /* Footer */
 
 footer {
