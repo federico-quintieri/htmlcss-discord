@@ -57,14 +57,21 @@ li {
 
 .span-button {
   display: inline-block;
-  height: 30px;
-  width: 70px;
-  border-radius: 15px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 20px;
   text-align: center;
   line-height: 30px;
-  background-color: white;
 }
 
+.span-button.white {
+  background-color: white;
+  color: black;
+}
+
+.span-button.black {
+  background-color: black;
+  color: white;
+}
 /* Header */
 .container-nav {
   width: 90%;
@@ -88,8 +95,8 @@ header .col-25.text-left {
 header .col-25.text-right {
   padding-right: 15px;
 }
-/* Stili classi principali sezioni*/
 
+/* Stili classi principali sezioni*/
 main > .container {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -101,15 +108,42 @@ section {
 }
 
 /* Hero section */
-.banner-section {
+.hero-section {
+  border: 2px solid red;
   background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-position: center;
+  /* Non mi convince sta cosa della min height per il banner */
+  min-height: 500px;
 }
 
-/* Hero container */
 .container-hero {
-  width: 60%;
-  max-width: 1100px;
+  width: 50%;
+  height: 500px;
   margin: 0 auto;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-hero h1 {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 30px;
+}
+
+.container-hero p {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container-hero .hero-buttons {
+  padding-top: 15px;
+}
+
+.hero-buttons span {
+  font-size: 1.2rem;
+  margin:0px 5px 0 5px;
 }
 
 /* Section 1 */
